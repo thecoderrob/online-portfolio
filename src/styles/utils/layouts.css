@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  gap: var(--flex-gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-gap, 1rem);
+}
+
+.container {
+  padding: 1.5rem;
+  border: 1px solid red;
+}
