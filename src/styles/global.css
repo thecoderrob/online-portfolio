@@ -18,6 +18,9 @@
   --fs-400: 1rem;
 
   --containerMaxWidth: 90em;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
 body {
