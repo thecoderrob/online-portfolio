@@ -1,0 +1,45 @@
+.sr-only {
+  /* hides element for sighted users */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.mobile-nav-toggle {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  border: 0;
+  background: transparent;
+  background-image: url(./assets/icon-hamburger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.gradient-text {
+  background: linear-gradient(var(--clr-accent-400), var(--clr-accent-300));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  border: double 3px transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(
+      circle at top left,
+      var(--clr-primary-400),
+      var(--clr-accent-400)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}

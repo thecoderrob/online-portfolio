@@ -14,5 +14,7 @@
 
 .container {
   padding: 1.5rem;
+  max-width: var(--containerMaxWidth);
+  margin-inline: auto;
   border: 1px solid red;
 }

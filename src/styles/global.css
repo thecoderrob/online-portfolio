@@ -1,0 +1,27 @@
+:root {
+  --clr-primary-400: hsl(243, 100%, 68%);
+  --clr-secondary-400: hsl(190, 100%, 50%);
+
+  --clr-neutral-900: hsl(0 0% 0%);
+  --clr-neutral-800: hsl(45, 8%, 20%);
+  --clr-neutral-700: hsl(0, 0%, 33%);
+  --clr-neutral-200: hsl(0, 0%, 96%);
+  --clr-neutral-100: hsl(0 0% 100%);
+
+  --ff-primary: "DM Sans", sans-serif;
+
+  --fw-reg: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-900: 3.5rem;
+  --fs-400: 1rem;
+
+  --containerMaxWidth: 90em;
+}
+
+body {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-reg);
+  font-family: var(--ff-primary);
+}
