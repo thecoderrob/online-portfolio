@@ -1,20 +1,19 @@
 .flex {
   display: flex;
-  gap: var(--flex-gap, 1rem);
+  gap: var(--flex-gap, 1.5rem);
 }
 
 .grid {
   display: grid;
-  gap: var(--grid-gap, 1rem);
+  gap: var(--grid-gap, 1.5rem);
 }
 
 .flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-gap, 1rem);
+  margin-top: var(--flow-gap, 1.5rem);
 }
 
 .container {
-  padding: 1.5rem;
+  padding: clamp(0.75rem, 1.75vw, 1.5rem);
   max-width: var(--containerMaxWidth);
   margin-inline: auto;
-  border: 1px solid red;
 }

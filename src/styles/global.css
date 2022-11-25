@@ -1,23 +1,26 @@
 :root {
-  --clr-primary-400: hsl(243, 100%, 68%);
-  --clr-secondary-400: hsl(190, 100%, 50%);
+  --clr-primary-400: hsl(35, 77%, 62%);
+  --clr-secondary-400: hsl(5, 85%, 63%);
 
   --clr-neutral-900: hsl(0 0% 0%);
-  --clr-neutral-800: hsl(45, 8%, 20%);
-  --clr-neutral-700: hsl(0, 0%, 33%);
-  --clr-neutral-200: hsl(0, 0%, 96%);
+  --clr-neutral-800: hsl(240, 100%, 5%);
+  --clr-neutral-700: hsl(236, 13%, 42%);
+  --clr-neutral-600: hsl(233, 8%, 79%);
+  --clr-neutral-200: hsl(36, 100%, 99%);
   --clr-neutral-100: hsl(0 0% 100%);
 
-  --ff-primary: "DM Sans", sans-serif;
+  --ff-primary: "Inter", sans-serif;
 
   --fw-reg: 400;
-  --fw-medium: 500;
   --fw-bold: 700;
+  --fw-extraBold: 800;
 
-  --fs-900: 3.5rem;
+  --fs-900: clamp(3rem, 4vw, 4rem);
+  --fs-800: 2.25rem;
+  --fs-700: 1.25rem;
   --fs-400: 1rem;
 
-  --containerMaxWidth: 90em;
+  --containerMaxWidth: 80em;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,4 +30,86 @@ body {
   font-size: var(--fs-400);
   font-weight: var(--fw-reg);
   font-family: var(--ff-primary);
+  color: var(--clr-neutral-700);
+}
+
+p {
+  line-height: 1.6;
+}
+
+.grid--main-section {
+  @media (min-width: 50em) {
+    & {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+}
+
+.grid--two-columns {
+  @media (min-width: 50em) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.grid--three-columns {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cta {
+  padding: 0.75rem 1.5rem;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 4.7px;
+  border: 0;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-secondary-400);
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+
+  &:hover {
+    background-color: var(--clr-neutral-800);
+  }
+}
+
+.article--new {
+  padding: clamp(0.75rem, 1.75vw, 1.5rem);
+  background-color: var(--clr-neutral-800);
+}
+
+.article--new > .new-card:not(:last-child) {
+  border-bottom: 1px solid var(--clr-neutral-700);
+}
+
+.new-card {
+  --flow-gap: 0.75rem;
+  padding-block: 1.5rem;
+
+  & h2 {
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+  }
+
+  & h2:hover {
+    color: var(--clr-primary-400);
+  }
+}
+
+.featured-card {
+  align-items: center;
+  --flow-gap: 0.5rem;
+
+  & img {
+    max-height: 150px;
+  }
+
+  & h1 {
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+  }
+
+  & h1:hover {
+    color: var(--clr-secondary-400);
+  }
 }

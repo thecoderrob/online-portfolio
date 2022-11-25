@@ -11,35 +11,38 @@
   border: 0;
 }
 
-.mobile-nav-toggle {
-  display: block;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 1.5rem;
-  aspect-ratio: 1;
-  border: 0;
-  background: transparent;
-  background-image: url(./assets/icon-hamburger.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+/* Typography */
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
 }
 
-.gradient-text {
-  background: linear-gradient(var(--clr-accent-400), var(--clr-accent-300));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.fs-900,
+.fs-800 {
+  line-height: 1.1;
 }
 
-.gradient-border {
-  border: double 3px transparent;
-  background-image: linear-gradient(white, white),
-    radial-gradient(
-      circle at top left,
-      var(--clr-primary-400),
-      var(--clr-accent-400)
-    );
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-extra-bold {
+  font-weight: var(--fw-extraBold);
+}
+
+/* Colors */
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+/* Colors */
+.text-neutral-800 {
+  color: var(--clr-neutral-800);
+}
+.text-neutral-600 {
+  color: var(--clr-neutral-600);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
 }

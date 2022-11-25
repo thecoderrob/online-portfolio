@@ -2,4 +2,6 @@
 @import "./styles/layouts.css";
 @import "./styles/utils.css";
 
+@import "./styles/components/navbar.css";
+
 @import "./styles/global.css";
